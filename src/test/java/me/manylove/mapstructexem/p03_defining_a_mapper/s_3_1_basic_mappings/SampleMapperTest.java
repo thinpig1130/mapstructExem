@@ -10,6 +10,7 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+
 @DisplayName("3.1 기본 매핑")
 class SampleMapperTest {
 
