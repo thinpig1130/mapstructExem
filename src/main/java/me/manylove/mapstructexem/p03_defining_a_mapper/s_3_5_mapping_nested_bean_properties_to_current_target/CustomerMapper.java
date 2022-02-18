@@ -34,14 +34,17 @@ public interface CustomerMapper {
      * (너무 당연한 이야기 인가?)
      */
 
-    @InheritInverseConfiguration
-    CustomerDto customerToCustomerDto(Customer customer);
-
     /**
+     * TODO 아래 내용이 뭔말인지 왜 이부분에 포함되어 있는지 연구가 필요.!
+     * This "target this" notation can be very useful when mapping hierarchical objects to flat objects and vice versa (@InheritInverseConfiguration).
+     *
      * @InheritInverseConfiguration 를 이용할때는 모두 명시해 주지 않으면
      * @Mapping( target = "name", source = "record.name" ) 때문에
-     * @Mapping( target = ".", source = "record" ) 는 적용이 되지 않네...
+     * @Mapping( target = ".", source = "record" ) 는 적용이 되지 않네... 왜그런 걸까?
      *
      */
+
+    @InheritInverseConfiguration
+    CustomerDto customerToCustomerDto(Customer customer);
 
 }
