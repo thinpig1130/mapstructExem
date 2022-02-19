@@ -7,6 +7,8 @@ import lombok.Setter;
 import me.manylove.mapstructexem.p03_defining_a_mapper.s_3_3_adding_custom_methods_to_mappers.CarType;
 import me.manylove.mapstructexem.p03_defining_a_mapper.s_3_3_adding_custom_methods_to_mappers.Person;
 
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -16,5 +18,8 @@ public class Car {
     private int numberOfSeats;
     private CarType type;
     private Person owner;
+    private List<String> option;
+
+
 
 }

@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import me.manylove.mapstructexem.p03_defining_a_mapper.s_3_3_adding_custom_methods_to_mappers.PersonDto;
 
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -15,4 +17,5 @@ public class CarDto {
     private int seatCount;
     private String type;
     private PersonDto owner;
+    private List<String> option;
 }
